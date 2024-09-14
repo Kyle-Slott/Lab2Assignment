@@ -63,6 +63,8 @@ public class App extends Application {
             //I do not know how to fix that without looping through the entire string
             if (rateValidated.isBlank() || yearsValidated.isBlank() || loanValidated.isBlank()
                     || rateValidated.equals(".") || yearsValidated.equals(".") || loanValidated.equals(".")){
+                //setting calculated fields to blank if there is an issue
+                monthlyPay.setText("");
                 total.setText("");
                 return;
             }
